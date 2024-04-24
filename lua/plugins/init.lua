@@ -3,7 +3,13 @@
 local default_plugins = {
 
   "nvim-lua/plenary.nvim",
-
+  {
+      'numToStr/Comment.nvim',
+      opts = {
+          -- add any options here
+      },
+      lazy = false,
+  },
   {
     "NvChad/base46",
     branch = "v2.0",
@@ -11,7 +17,6 @@ local default_plugins = {
       require("base46").load_all_highlights()
     end,
   },
-
   {
     "NvChad/ui",
     branch = "v2.0",
